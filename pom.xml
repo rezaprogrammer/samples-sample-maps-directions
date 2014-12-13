@@ -23,6 +23,16 @@
   </dependencies>
 
   <build>
+    <resources>
+      <resource>
+        <directory>./src/main/java/com/sample/maps/</directory>
+        <targetPath>com/sample/maps</targetPath>
+        <includes>
+          <include>google_cloud_server_api_key.properties</include>
+        </includes>
+      </resource>
+    </resources>
+
     <plugins>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
