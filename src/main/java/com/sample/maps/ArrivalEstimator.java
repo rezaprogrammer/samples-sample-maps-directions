@@ -19,7 +19,7 @@ public class ArrivalEstimator {
 	static {
 		Properties prop = new Properties();
 		try {
-			prop.load(new FileInputStream("./src/com/sample/maps/google_cloud_server_api_key.properties"));
+			prop.load(new FileInputStream("./src/main/java/com/sample/maps/google_cloud_server_api_key.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.exit(-1);
